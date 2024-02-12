@@ -8,4 +8,9 @@ export const PageWrapper = styled.article`
   flex-direction: column;
   padding: ${({ theme }) => theme.spacing.large};
   box-sizing: border-box;
+  align-items: center;
 `;
+
+
+
+

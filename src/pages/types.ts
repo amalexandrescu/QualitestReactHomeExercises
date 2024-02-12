@@ -8,3 +8,13 @@ export type User = {
     medium: string;
   };
 };
+
+export type UserEssentialInfo = {
+  firstName: string;
+  lastName: string;
+  image: string;
+};
+
+export type FetchUsersResponse = {
+  results: User[]
+}
