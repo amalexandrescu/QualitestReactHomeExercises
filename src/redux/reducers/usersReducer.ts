@@ -16,7 +16,6 @@ export const initialState: {
 
 interface IreduxAction {
   type: string;
-  // payload?: UserEssentialInfo[] | { message: string };
   payload?: any;
 }
 
