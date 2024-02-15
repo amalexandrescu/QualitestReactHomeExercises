@@ -4,8 +4,8 @@ import {
   InputValueExceededError,
   StyledInput,
 } from "./styles";
-import { useSelector } from "react-redux";
 import { UserEssentialInfo } from "../../pages/types";
+import { useAppSelector } from "../../redux/store/store";
 
 interface IInputProps {
   value: number | undefined;
@@ -14,7 +14,7 @@ interface IInputProps {
 }
 
 export const Input: FC<IInputProps> = ({ value, onChange, error }) => {
-  const users = useSelector((state: any) => state.users);
+  const users = useAppSelector((state: any) => state.users.data);
 
   const [usersWithNameAndImage, setUsersWithNameAndImage] = useState<
     Array<UserEssentialInfo>

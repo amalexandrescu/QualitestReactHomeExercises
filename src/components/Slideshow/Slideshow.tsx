@@ -1,10 +1,10 @@
 import { FC, useEffect, useState } from "react";
 import { Button } from "../Button/Button";
 import UserCard from "../UserCard/UserCard";
-import { useSelector } from "react-redux";
+import { useAppSelector } from "../../redux/store/store";
 
 const Slideshow: FC = () => {
-  const users = useSelector((state: any) => state.users);
+  const users = useAppSelector((state) => state.users.data);
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [isSlideshowRunning, setIsSlideshowRunning] = useState(false);
 
