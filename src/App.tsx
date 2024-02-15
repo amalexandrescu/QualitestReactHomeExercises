@@ -2,7 +2,7 @@ import { ThemeProvider } from "styled-components";
 import "./App.css";
 import { theme } from "./theme/theme";
 import { Provider } from "react-redux";
-import { store } from "./store/store";
+import { store } from "./redux/store/store";
 import { RouterProvider } from "react-router-dom";
 import { router } from "./routing/router";
 
